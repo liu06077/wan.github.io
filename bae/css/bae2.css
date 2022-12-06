@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body,.wrapper{
+    height: 100%;
+}
+@keyframes rotate {
+    100%{
+        background-position: 10% 50% ;
+    }
+}
+
+body{
+    /*display: grid;
+    place-items: center;*/
+    margin: 0;
+    padding: 0 12px;
+    background-image: url(../123.svg);
+    background-size: cover;
+    font-family: "Nerko One";
+    color: rgb(9, 164, 164);
+    animation: rotate 6s infinite alternate linear;
+}
+
+
+.new{
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 0 20px;
+    padding:50px 0 ;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+
+
+.con div{
+    padding: 10px;
+    width: 100px;
+}
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+  
+
+}
+.con1{
+    flex: 1;
+}
+
+.con2{
+    flex: 1;
+}
+.con3{
+    flex:1;
+}
+.con4{
+    flex:1;
+}
+.con5{
+    flex:1;
+}
+.con6{
+    flex:1;
+}
+.con7{
+    flex:1;
+}
+.con8{
+    flex:1;
+}
+.con9{
+    flex:1;
+}
+
+.page{
+    font-size: 22px;
+    color: antiquewhite;
+}

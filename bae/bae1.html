@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碗零生日快樂!</title>
+    <link rel="stylesheet" href="css/bae1.css">
+</head>
+<body>
+    <div class="login">
+        <h2 style="color:rgb(251, 201, 242);">Hello你終於進來了 請先登錄吧!(๑•ั็ω•็ั๑)</h2>
+
+        <h3>I HOPE YOU LIKE THIS.</h3>
+        
+        <form class="form">
+          
+                <input type="text" id="no1"  placeholder="請輸入帳號(剛交往當天4位數)" />
+                <input type="password" id="no2"  placeholder="請輸入密碼" />
+                <a href="#" id="no" onclick="clock()">不知道密碼?</a>
+                
+                    <button type="sumbit" id="no3" onclick="clock1()">進入世界!</button>
+                <button onclick="s()">點選查看當日日期</button>
+                <button>
+                    <a id="no4"href="#" style="text-decoration:none;">你以為沒登入就可以按?</a>
+                </button>
+                <script src="js/bae1.js"></script>
+
+                
+          
+        </form>
+    </div>
+    <script>
+        var s1='2021-12-25';
+        s1 = new Date(s1.replace(/-/g,"/"));
+        var str_s1=s1.getFullYear()+'年'+(s1.getMonth()+1)+'月'+s1.getDate()+'日';
+
+        var wrap = document.createElement("div");
+        wrap.style='position:relative style= background-position:bottom right;';
+        var div_time = document.createElement("div");
+        var img = document.createElement("img");
+
+        
+        wrap.appendChild(div_time);
+        wrap.appendChild(img);
+        document.body.appendChild(wrap);
+        
+        setInterval(function(){
+            s2 = new Date();
+            var dateDiff = s2.getTime() - s1.getTime();
+            var dayDiff = Math.floor(dateDiff / (24 * 3600 * 1000));
+            var leave1=dateDiff%(24*3600*1000);   
+            var hours=Math.floor(leave1/(3600*1000));
+ 
+            var leave2=leave1%(3600*1000)    
+            var minutes=Math.floor(leave2/(60*1000));
+
+            var leave3=leave2%(60*1000);      
+            var seconds=Math.round(leave3/1000);
+            div_time.innerHTML="<P style='color: #fb82bc;font-size:35px;'>"+str_s1+" 相愛的第一天到現在已過了 "+dayDiff+"天 "+hours+"小時 "+minutes+" 分鐘"+seconds+" 秒";
+        +""},100); 
+   
+    </script>
+
+</body>
+</html>

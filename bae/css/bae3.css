@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html, body,.wrapper{
+    height: 100%;
+}
+@keyframes rotate {
+    100%{
+        background-position: 10% 50% ;
+    }
+}
+
+body{
+    /*display: grid;
+    place-items: center;*/
+    margin: 0;
+    padding: 0 12px;
+    background-image: url(../123.svg);
+    background-size: cover;
+    font-family: "Nerko One";
+    color: rgb(9, 164, 164);
+    animation: rotate 6s infinite alternate linear;
+}
