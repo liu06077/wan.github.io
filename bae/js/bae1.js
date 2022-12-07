@@ -18,6 +18,11 @@ no3.addEventListener("click",function(){
         no4.innerText="好啦你可以按了啦ㄚㄚㄚㄚㄚ啊!";
     }
 })
+no5.addEventListener("click",function(){
+    var no5=document.getElementById('no5');
+    no5.href='1.html';
+    
+})
 
 function s() {
     　var Today=new Date();
