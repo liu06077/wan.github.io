@@ -87,10 +87,7 @@ body{
     letter-spacing: 9px;
     transition: all 0.375s;
 }
-
-.form >button :hover{
-    background-color: rgb(11, 36, 36);
-}   
+ 
 
 .form> a{
     color: #fb82bc;
